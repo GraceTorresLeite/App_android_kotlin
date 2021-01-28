@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Business Controll V3</string>
+
+
+    <!--  MainActivity  -->
+    <string name="sair_text"> Sair </string>
+    <string name="toast_text"> Teste de Toast </string>
+    <string name="snack_bar_text">Deseja mesmo sair da aplicação?</string>
+
+
+    <!--  Login Activity  -->
+    <string name="email_text"> Email </string>
+    <string name="password_text"> Password </string>
+    <string name="login_text_button"> Login </string>
+
+    <!--  Mensagens de validacao  -->
+    <string name="password_blank">Password não pode ser vazio</string>
+    <string name="email_blank">E-mail não pode ser vazio</string>
+    <string name="email_invalid">E-mail inválido</string>
+
+    <!-- Bottom menu -->
+    <string name="title_new_responsible">+ Responsavel</string>
+    <string name="title_new_account">+ Conta</string>
+    <string name="title_new_transaction">+ Transação</string>
+    <string name="title_navigation_configuration">Configurações</string>
+
+    <!-- preferences -->
+    <string name="preference_list_responsible"> responsibles </string>
+
+</resources>
