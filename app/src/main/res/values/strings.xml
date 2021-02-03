@@ -27,4 +27,16 @@
     <!-- preferences -->
     <string name="preference_list_responsible"> responsibles </string>
 
+    <!-- Transaction -->
+    <string name="title_transaction_id"> Id </string>
+    <string name="title_transaction_data"> Data </string>
+    <string name="title_transaction_valor"> Valor </string>
+    <string name="title_transaction_descricao"> Descricao </string>
+    <string name="title_transaction_responsible"> Responsável </string>
+    <string name="title_transaction_conta"> Conta </string>
+    <string name="title_transaction_tipoTransacaoEnum"> Transação tipo </string>
+    <string name="title_transaction_tipoRendaEnum"> Renda tipo </string>
+    <string name="title_transaction_categoriaDespesaEnum"> Despesa com </string>
+
+
 </resources>

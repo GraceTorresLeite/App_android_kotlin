@@ -1,0 +1,20 @@
+package com.example.businesscontrollv3.model
+
+enum class CategoriaDespesaEnum(name:String) {
+    ACADEMIA ("ACADEMIA"),
+    AGUA ("AGUA"),
+    ALIMENTACAO ("ALIMENTACAO"),
+    ALUGUEL ("ALUGUEL"),
+    CAMA_MESA_BANHO ("CAMA_MESA_BANHO"),
+    CARTAO_CREDITO ("CARTAO_CREDITO") ,
+    CELULAR ("CELULAR"),
+    CONDOMINIO ("CONDOMINIO") ,
+    LUZ ("LUZ") ,
+    EDUCACAO ("EDUCACAO"),
+    SERVIDOR_WEB ("SERVIDOR_WEB"),
+    NUVEM ("NUVEM"),
+    ENTRETENIMENTO ("ENTRETENIMENTO"),
+    FARMACIA("FARMACIA"),
+    LIVRARIA("LIVRARIA")
+
+}
