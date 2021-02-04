@@ -3,14 +3,12 @@ package com.example.businesscontrollv3.viewmodel
 import android.util.Patterns
 import android.view.View
 import androidx.databinding.Bindable
-import androidx.databinding.Observable
-import androidx.databinding.PropertyChangeRegistry
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.businesscontrollv3.BR
 import com.example.businesscontrollv3.model.Result
-import com.example.businesscontrollv3.model.Usuario
+import com.example.businesscontrollv3.model.Login
+import com.example.businesscontrollv3.model.User
 import com.example.businesscontrollv3.repository.LoginRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -52,7 +50,7 @@ class LoginActivityViewModel(val loginRepository: LoginRepository) : BaseViewMod
             val result = loginRepository.login(email, password)
 
             when(result) {
-                is Result.Success<Usuario> -> redirect.postValue(true)
+                is Result.Success<User> -> redirect.postValue(true)
                 is Result.Error -> showError(result.exception.message)
             }
 
