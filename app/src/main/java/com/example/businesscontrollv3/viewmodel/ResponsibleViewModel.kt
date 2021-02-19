@@ -3,13 +3,17 @@ package com.example.businesscontrollv3.viewmodel
 import android.content.Context
 import android.widget.Toast
 import androidx.databinding.Bindable
+import androidx.lifecycle.asLiveData
 import com.example.businesscontrollv3.R
 import com.example.businesscontrollv3.model.Responsible
+import com.example.businesscontrollv3.repository.ResponsibleRepository
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import java.lang.reflect.Type
 
-class ResponsibleViewModel: BaseViewModel() {
+class ResponsibleViewModel(private val responsibleRepository: ResponsibleRepository): BaseViewModel() {
+
+    private val allResponsibles = responsibleRepository.allResponsibles.asLiveData()
 
     @Bindable
     var name: String = ""

@@ -1,13 +1,21 @@
 package com.example.businesscontrollv3.repository
 
+import androidx.annotation.WorkerThread
+import com.example.businesscontrollv3.infra.database.AccountDAO
 import com.example.businesscontrollv3.model.Account
-import com.example.businesscontrollv3.model.AccountTypeEnum
-import com.example.businesscontrollv3.model.Responsible
-import java.math.BigDecimal
 
-class AccountRepository {
 
-    fun getAllAccounts(): MutableList<Account>{
+class AccountRepository (private val accountDAO: AccountDAO){
+
+    val allAccounts = accountDAO.getAllAccounts()
+
+    @Suppress("RedundantSuspendModifier")
+    @WorkerThread
+    suspend fun save(account: Account){
+        accountDAO.save(account)
+    }
+
+    /*fun getAllAccounts(): MutableList<Account>{
         val responsible = Responsible("Matias")
 
         val list = mutableListOf(
@@ -20,9 +28,6 @@ class AccountRepository {
             )
         }
         return list
-        /*return mutableListOf(
-                Account("Banco1", BigDecimal.TEN, responsible,AccountTypeEnum.DEBITO),
-                Account("Banco2", BigDecimal.valueOf(1000), responsible,AccountTypeEnum.DEBITO),
-        )*/
-    }
+
+    }*/
 }
