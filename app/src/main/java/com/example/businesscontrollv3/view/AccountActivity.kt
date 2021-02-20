@@ -3,13 +3,12 @@ package com.example.businesscontrollv3.view.fragment
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
 import com.example.businesscontrollv3.R
 import com.example.businesscontrollv3.databinding.ActivityAccountBinding
-import com.example.businesscontrollv3.model.AccountTypeEnum
+import com.example.businesscontrollv3.model.type.AccountTypeEnum
 import com.example.businesscontrollv3.model.Responsible
 import com.example.businesscontrollv3.view.MainActivity
 import com.example.businesscontrollv3.viewmodel.AccountsViewModel
